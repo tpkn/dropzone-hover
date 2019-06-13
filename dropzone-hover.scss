@@ -1,0 +1,36 @@
+* {
+   box-sizing: border-box;
+}
+
+html,body {
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   overflow: hidden;
+   background-color: #faf9fb;
+}
+
+
+$color: #ffe417;
+$duration: .3s;
+$thickness: 100px;
+$easing: cubic-bezier(0.490, 0.265, 0.450, 1);
+
+.dropzone-hover {
+   position: fixed;
+   left: 0; right: 0; top: 0; bottom: 0;
+   
+   overflow: hidden;
+
+   pointer-events: none;
+   user-select: none;
+
+   z-index: 100000;
+
+   box-shadow: inset 0 0 0 0 $color;
+   transition: box-shadow $duration $easing;
+}
+
+.enter {
+   box-shadow: inset 0 0 0 $thickness $color;
+}
