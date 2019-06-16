@@ -1,2 +1,1 @@
-# dropzone-hover
-Dropzone hover style
+![preview](https://github.com/tpkn/dropzone-hover/raw/master/preview.gif)
